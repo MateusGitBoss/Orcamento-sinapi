@@ -60,6 +60,15 @@ O erro calado das regras é "fio flexível 2,5mm": a busca por palavras achou "e
 
 **Importante:** a tabela de exemplo tem 61 insumos e **preços fictícios**, no layout da planilha da Caixa. O gabarito também é de exemplo. Para números que valem alguma coisa, importe a planilha oficial do mês e troque o gabarito por linhas reais de obra.
 
+## Demonstração no navegador
+
+A pasta `web/` tem uma página estática com o orçamento da lista de exemplo, os candidatos que a busca devolveu para cada linha, a avaliação contra o gabarito e a tabela de insumos. Tudo foi calculado pelo código Python (modo por regras, sem IA) sobre a tabela de exemplo com preços fictícios; a página só exibe e soma. Para regerar com o banco rodando e a tabela importada:
+
+```bash
+uv run python scripts/gerar_dados_web.py   # regrava web/dados/demo.json
+python -m http.server -d web 8000          # abre em http://localhost:8000
+```
+
 ## Como rodar
 
 Pré-requisitos: Python 3.12, [uv](https://docs.astral.sh/uv/) e Postgres (ou `docker compose`).
