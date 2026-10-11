@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orçamento SINAPI · demonstração</title>
+<meta name="description" content="Demonstração do orçamentista: lista de materiais escrita de qualquer jeito vira orçamento com preços da tabela SINAPI e itens duvidosos separados para revisão.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧱</text></svg>">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--txt:#1b1f24;--mut:#5b6573;--borda:#dde1e6;--acento:#b35900;--ok:#1a7f37;--alerta:#9a6700;--erro:#cf222e;--cinza:#eef1f4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--card);border-bottom:1px solid var(--borda)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header .wrap{padding-top:20px;padding-bottom:16px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:17px;margin:0 0 10px}
+p{margin:0 0 10px}
+a{color:#0969da}
+.sub{color:var(--mut);margin:0}
+.aviso{background:#fff8c5;border:1px solid #e6d27a;border-radius:8px;padding:8px 12px;margin-top:12px;font-size:14px}
+.nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:10px;font-size:14px}
+main{padding:18px 0 40px}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:10px;padding:16px;margin-bottom:16px;min-width:0}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--borda);border-radius:6px;background:#fff;color:var(--txt)}
+button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--borda);background:#fff;padding:7px 12px;color:var(--txt)}
+button.prim{background:var(--acento);border-color:var(--acento);color:#fff;font-weight:600}
+.barra{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.barra input[type=search]{flex:1;min-width:200px}
+.abas button[aria-pressed=true]{background:var(--txt);color:#fff;border-color:var(--txt)}
+.tabela{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--borda);vertical-align:top}
+th{color:var(--mut);font-weight:600;font-size:12.5px;white-space:nowrap}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr.item{cursor:pointer}
+tr.item td:first-child{min-width:190px}
+tr.item:hover{background:#fafbfc}
+tr.revisar{background:#fffbea}
+tr.detalhe td{background:var(--cinza);font-size:13px}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:600;background:var(--cinza);white-space:nowrap}
+.t-ok{background:#dafbe1;color:var(--ok)}.t-alerta{background:#fff8c5;color:var(--alerta)}.t-erro{background:#ffebe9;color:var(--erro)}
+.motivo{color:var(--mut);font-size:12.5px;margin-top:2px}
+.total{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.kpi{background:var(--cinza);border-radius:8px;padding:10px 14px;min-width:150px}
+.kpi b{display:block;font-size:20px}
+.kpi span{font-size:12.5px;color:var(--mut)}
+.kpi.bom{background:#dafbe1}.kpi.medio{background:#fff8c5}.kpi.ruim{background:#ffebe9}
+.passos{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));counter-reset:p}
+.passo{background:var(--cinza);border-radius:8px;padding:10px 12px;font-size:14px}
+.passo b{display:block}
+.passo b::before{counter-increment:p;content:counter(p) ". ";color:var(--acento)}
+.escolher{display:grid;gap:4px 14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));font-size:14px;max-height:260px;overflow:auto;border:1px solid var(--borda);border-radius:8px;padding:10px}
+.escolher label{display:flex;gap:6px;align-items:flex-start}
+details>summary{cursor:pointer;color:#0969da;font-size:14px;margin:4px 0 8px}
+.barra-nota{display:inline-block;height:8px;background:var(--acento);border-radius:4px;vertical-align:middle;margin-right:6px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.92em;background:var(--cinza);padding:1px 4px;border-radius:4px}
+.vazio{color:var(--mut);font-style:italic}
+footer{color:var(--mut);font-size:13px;padding:0 0 30px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>🧱 Orçamento com SINAPI</h1>
+  <p class="sub">Transforma uma lista de materiais escrita de qualquer jeito ("10 sacos cimento cp2", "2m³ areia fina") num orçamento com preços da tabela SINAPI. O que for duvidoso não entra calado no total: vai para revisão com o motivo.</p>
+  <div class="aviso"><b>Demonstração com preços fictícios.</b> A tabela usada tem 61 insumos de exemplo no layout da planilha da Caixa (<span id="refBase"></span>), não a planilha oficial. Os resultados abaixo foram gerados rodando o código Python de verdade no <b>modo por regras, sem IA</b>; a página só exibe e soma. Nada daqui serve como preço de obra.</div>
+  <nav class="nav"><a href="https://github.com/MateusGitBoss/Or-amento-sinapi">Código no GitHub</a><a href="#orcamento">Orçamento</a><a href="#avaliacao">Avaliação</a><a href="#insumos">Tabela de insumos</a><a href="#como">Como funciona</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="card" id="orcamento">
+  <h2>Orçamento</h2>
+  <div class="barra abas" role="group" aria-label="Lista">
+    <button type="button" data-lista="reforma" aria-pressed="true">Reforma de banheiro</button>
+    <button type="button" data-lista="avaliacao" aria-pressed="false">Lista de avaliação</button>
+    <button type="button" data-lista="extras" aria-pressed="false">Outros pedidos</button>
+    <button type="button" data-lista="propria" aria-pressed="false">Montar a minha</button>
+  </div>
+  <div id="montar" hidden>
+    <p class="sub" style="margin-bottom:8px">Marque as linhas que entram. São todas as linhas que o Python já orçou para esta demonstração.</p>
+    <div class="escolher" id="escolher"></div>
+  </div>
+  <p class="sub" style="margin:10px 0">Toque numa linha para ver os candidatos que a busca devolveu e por que um deles foi escolhido.</p>
+  <div class="tabela"><table>
+    <thead><tr><th>Pedido</th><th>Código</th><th>Insumo SINAPI</th><th class="num">Qtd. SINAPI</th><th class="num">Preço un.</th><th class="num">Subtotal</th><th>Situação</th></tr></thead>
+    <tbody id="tabOrcamento"></tbody>
+  </table></div>
+  <div class="total" id="total"></div>
+  <div class="barra" style="margin-top:12px"><button type="button" class="prim" id="baixar">Baixar CSV</button><span class="sub" style="font-size:13px">Separador <code>;</code> e vírgula decimal, abre direto no Excel.</span></div>
+</section>
+
+<section class="card" id="avaliacao">
+  <h2>Avaliação contra o gabarito</h2>
+  <p>O número que diz se uma mudança melhorou ou piorou o orçamentista. Cada linha do gabarito tem o código SINAPI certo; o resultado de cada uma cai em três grupos:</p>
+  <div class="total" id="kpisAvaliacao"></div>
+  <p class="sub" style="margin:12px 0 8px"><b>Erro calado</b> é o pior: código errado sem pedir revisão, entra no total e ninguém confere. A meta é zero. <b>Revisão</b> custa tempo, não dinheiro.</p>
+  <div class="barra">
+    <select id="filtroTipo"><option value="">Todos os casos</option><option value="erro_calado">Só erros calados</option><option value="revisao">Só revisões</option><option value="acerto">Só acertos</option></select>
+  </div>
+  <div class="tabela"><table>
+    <thead><tr><th>Linha</th><th>Esperado</th><th>Obtido</th><th>Confiança</th><th>Resultado</th></tr></thead>
+    <tbody id="tabAvaliacao"></tbody>
+  </table></div>
+</section>
+
+<section class="card" id="insumos">
+  <h2>Tabela de insumos (<span id="ufRef"></span>)</h2>
+  <div class="barra"><input type="search" id="busca" placeholder="Filtrar por código ou descrição, ex.: cimento, 7271"></div>
+  <div class="tabela"><table>
+    <thead><tr><th>Código</th><th>Descrição</th><th>Unid.</th><th class="num">Preço (fictício)</th></tr></thead>
+    <tbody id="tabInsumos"></tbody>
+  </table></div>
+</section>
+
+<section class="card" id="como">
+  <h2>Como funciona</h2>
+  <div class="passos">
+    <div class="passo"><b>Extração</b>Lê quantidade, unidade e material da linha. "1500 tijolo 8 furos" vira 1500 UN de "tijolo 8 furos".</div>
+    <div class="passo"><b>Busca no banco</b>Busca por similaridade de texto (pg_trgm) na tabela SINAPI do mês e da UF. Devolve os candidatos com nota.</div>
+    <div class="passo"><b>Escolha</b>Escolhe um candidato e diz a confiança. Por regras (nota e distância para o segundo) ou com IA.</div>
+    <div class="passo"><b>Preço do banco</b>O preço sempre vem da tabela, nunca da IA. Converte unidades seguras (UN↔MIL, KG↔T).</div>
+    <div class="passo"><b>Revisão</b>Confiança baixa ou unidade que não converte (saco → kg depende do produto) vai para revisão e fica fora do total.</div>
+  </div>
+  <p class="sub" style="margin-top:12px">Com IA ligada (chave da Anthropic), a extração e a escolha usam o modelo, com cache no Postgres para não pagar duas vezes pela mesma linha. Esta página mostra o modo por regras porque roda sem chave.</p>
+</section>
+</main>
+<footer class="wrap">Projeto de portfólio de Mateus. Código: Python, PostgreSQL com pg_trgm, Typer, Anthropic SDK, pytest. Dados gerados por <code>scripts/gerar_dados_web.py</code>.</footer>
+
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const reais = c => c == null ? "—" : "R$ " + (c/100).toLocaleString("pt-BR", {minimumFractionDigits:2, maximumFractionDigits:2});
+const num = n => n == null ? "—" : Number(n).toLocaleString("pt-BR", {maximumFractionDigits:3});
+let D, listaAtual = "reforma", selecionadas = new Set(), aberta = null;
+
+function linhasAtuais(){
+  return listaAtual === "propria" ? [...selecionadas] : D.listas[listaAtual];
+}
+function renderOrcamento(){
+  const linhas = linhasAtuais();
+  let total = 0, revisar = 0;
+  const html = linhas.map((l, i) => {
+    const r = D.linhas[l].resultado;
+    if (r.revisar) revisar++; else total += r.subtotal_centavos || 0;
+    const sit = r.revisar ? '<span class="tag t-alerta">revisar</span>' : '<span class="tag t-ok">ok</span>';
+    let linha = `<tr class="item${r.revisar ? " revisar" : ""}" data-i="${i}">
+      <td>${esc(l)}${r.motivo ? `<div class="motivo">${esc(r.motivo)}</div>` : ""}</td>
+      <td>${r.codigo ? `<code>${r.codigo}</code>` : "—"}</td>
+      <td>${esc(r.descricao) || '<span class="vazio">nenhum</span>'}</td>
+      <td class="num">${r.quantidade_sinapi == null ? "—" : num(r.quantidade_sinapi) + " " + esc(r.unidade)}</td>
+      <td class="num">${reais(r.preco_unitario_centavos)}${r.unidade ? "/" + esc(r.unidade) : ""}</td>
+      <td class="num">${r.revisar ? '<span class="vazio">fora do total</span>' : reais(r.subtotal_centavos)}</td>
+      <td>${sit} <small>${r.confianca}</small></td></tr>`;
+    if (aberta === l) linha += detalhe(l);
+    return linha;
+  }).join("");
+  $("tabOrcamento").innerHTML = html || `<tr><td colspan="7" class="vazio">Marque linhas acima para montar o orçamento.</td></tr>`;
+  $("total").innerHTML = `<div class="kpi bom"><b>${reais(total)}</b><span>total dos itens ok</span></div>
+    <div class="kpi ${revisar ? "medio" : ""}"><b>${revisar}</b><span>itens para revisar (fora do total)</span></div>
+    <div class="kpi"><b>${linhas.length}</b><span>linhas · SINAPI ${esc(D.uf)} ${esc(D.referencia)}</span></div>`;
+}
+function detalhe(l){
+  const {resultado: r, candidatos: cs} = D.linhas[l];
+  const max = Math.max(...cs.map(c => c.nota), 0.01);
+  const extra = r.quantidade != null ? `Entendido: <b>${num(r.quantidade)} ${esc(r.unidade_pedida || "(sem unidade)")}</b>. ` : "";
+  const tab = cs.length ? `<table><thead><tr><th>Nota</th><th>Código</th><th>Descrição</th><th>Unid.</th><th class="num">Preço</th></tr></thead><tbody>${cs.map(c => `<tr${c.codigo === r.codigo ? ' style="font-weight:600"' : ""}><td style="white-space:nowrap"><span class="barra-nota" style="width:${Math.round(60*c.nota/max)}px"></span>${c.nota.toFixed(2)}</td><td><code>${c.codigo}</code>${c.codigo === r.codigo ? " ✔" : ""}</td><td>${esc(c.descricao)}</td><td>${esc(c.unidade)}</td><td class="num">${reais(c.preco_centavos)}</td></tr>`).join("")}</tbody></table>`
+    : '<p class="vazio">A busca não devolveu candidatos.</p>';
+  return `<tr class="detalhe"><td colspan="7">${extra}Candidatos da busca (o escolhido em negrito):${tab}</td></tr>`;
+}
+function renderAvaliacao(){
+  const a = D.avaliacao, pct = n => Math.round(100 * n / a.total) + "%";
+  $("kpisAvaliacao").innerHTML = `<div class="kpi bom"><b>${a.acertos} <small>(${pct(a.acertos)})</small></b><span>acertos</span></div>
+    <div class="kpi medio"><b>${a.revisoes} <small>(${pct(a.revisoes)})</small></b><span>mandados para revisão</span></div>
+    <div class="kpi ruim"><b>${a.erros_calados} <small>(${pct(a.erros_calados)})</small></b><span>erros calados</span></div>
+    <div class="kpi"><b>${a.total}</b><span>linhas no gabarito · ${esc(D.modo)}</span></div>`;
+  const filtro = $("filtroTipo").value;
+  const rotulo = {acerto:'<span class="tag t-ok">acerto</span>', revisao:'<span class="tag t-alerta">revisão</span>', erro_calado:'<span class="tag t-erro">erro calado</span>'};
+  const ordem = {erro_calado:0, revisao:1, acerto:2};
+  $("tabAvaliacao").innerHTML = a.casos.filter(c => !filtro || c.tipo === filtro).sort((x, y) => ordem[x.tipo] - ordem[y.tipo])
+    .map(c => `<tr><td>${esc(c.linha)}</td><td>${c.esperado ? `<code>${c.esperado}</code>` : '<span class="vazio">nenhum</span>'}</td><td>${c.obtido ? `<code>${c.obtido}</code>` : '<span class="vazio">nenhum</span>'}</td><td>${c.confianca}</td><td>${rotulo[c.tipo]}</td></tr>`).join("");
+}
+function semAcento(s){ return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+function renderInsumos(){
+  const q = semAcento($("busca").value.trim());
+  const lista = D.insumos.filter(i => !q || semAcento(i.codigo + " " + i.descricao).includes(q));
+  $("tabInsumos").innerHTML = lista.map(i => `<tr><td><code>${i.codigo}</code></td><td>${esc(i.descricao)}</td><td>${esc(i.unidade)}</td><td class="num">${reais(i.preco_centavos)}</td></tr>`).join("")
+    || `<tr><td colspan="4" class="vazio">Nada encontrado.</td></tr>`;
+}
+function baixarCsv(){
+  const campo = v => { const s = String(v ?? ""); return /[;"\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+  const dec = c => c == null ? "" : (c/100).toFixed(2).replace(".", ",");
+  const linhas = [["pedido","codigo","descricao","unidade","quantidade_sinapi","preco_unitario","subtotal","situacao","confianca","motivo"]];
+  for (const l of linhasAtuais()){
+    const r = D.linhas[l].resultado;
+    linhas.push([l, r.codigo, r.descricao, r.unidade, r.quantidade_sinapi == null ? "" : String(r.quantidade_sinapi).replace(".", ","),
+      dec(r.preco_unitario_centavos), r.revisar ? "" : dec(r.subtotal_centavos), r.revisar ? "revisar" : "ok", r.confianca, r.motivo]);
+  }
+  const blob = new Blob(["﻿" + linhas.map(l => l.map(campo).join(";")).join("\r\n")], {type:"text/csv;charset=utf-8"});
+  const a = Object.assign(document.createElement("a"), {href: URL.createObjectURL(blob), download: `orcamento-demo-${listaAtual}.csv`});
+  a.click(); URL.revokeObjectURL(a.href);
+}
+
+async function iniciar(){
+  D = await (await fetch("dados/demo.json")).json();
+  $("refBase").textContent = `${D.uf} ${D.referencia}`;
+  $("ufRef").textContent = `${D.uf} ${D.referencia}, ${D.insumos.length} insumos`;
+  const todas = Object.keys(D.linhas);
+  D.listas.reforma.forEach(l => selecionadas.add(l));
+  $("escolher").innerHTML = todas.map((l, i) => `<label><input type="checkbox" data-l="${i}"${selecionadas.has(l) ? " checked" : ""}> ${esc(l)}</label>`).join("");
+  $("escolher").addEventListener("change", e => { const l = todas[e.target.dataset.l]; e.target.checked ? selecionadas.add(l) : selecionadas.delete(l); renderOrcamento(); });
+  document.querySelectorAll("[data-lista]").forEach(b => b.addEventListener("click", () => {
+    listaAtual = b.dataset.lista; aberta = null;
+    document.querySelectorAll("[data-lista]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    $("montar").hidden = listaAtual !== "propria";
+    renderOrcamento();
+  }));
+  $("tabOrcamento").addEventListener("click", e => {
+    const tr = e.target.closest("tr.item"); if (!tr) return;
+    const l = linhasAtuais()[tr.dataset.i]; aberta = aberta === l ? null : l; renderOrcamento();
+  });
+  $("filtroTipo").addEventListener("change", renderAvaliacao);
+  $("busca").addEventListener("input", renderInsumos);
+  $("baixar").addEventListener("click", baixarCsv);
+  renderOrcamento(); renderAvaliacao(); renderInsumos();
+}
+iniciar();
+</script>
+</body>
+</html>

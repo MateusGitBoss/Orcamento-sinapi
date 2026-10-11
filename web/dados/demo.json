@@ -1,0 +1,2311 @@
+{
+ "uf": "MA",
+ "referencia": "08/2026",
+ "modo": "regras (sem IA)",
+ "insumos": [
+  {
+   "codigo": "34",
+   "descricao": "ACO CA-50, 10,0 MM, VERGALHAO",
+   "unidade": "KG",
+   "preco_centavos": 810
+  },
+  {
+   "codigo": "32",
+   "descricao": "ACO CA-50, 6,3 MM, VERGALHAO",
+   "unidade": "KG",
+   "preco_centavos": 890
+  },
+  {
+   "codigo": "33",
+   "descricao": "ACO CA-50, 8,0 MM, VERGALHAO",
+   "unidade": "KG",
+   "preco_centavos": 845
+  },
+  {
+   "codigo": "43059",
+   "descricao": "ACO CA-60, 5,0 MM, VERGALHAO",
+   "unidade": "KG",
+   "preco_centavos": 920
+  },
+  {
+   "codigo": "20078",
+   "descricao": "ADESIVO PLASTICO PARA PVC, FRASCO COM 175 GR",
+   "unidade": "UN",
+   "preco_centavos": 1450
+  },
+  {
+   "codigo": "337",
+   "descricao": "ARAME RECOZIDO 18 BWG, 1,25 MM (0,01 KG/M)",
+   "unidade": "KG",
+   "preco_centavos": 1490
+  },
+  {
+   "codigo": "366",
+   "descricao": "AREIA FINA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+   "unidade": "M3",
+   "preco_centavos": 10200
+  },
+  {
+   "codigo": "370",
+   "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+   "unidade": "M3",
+   "preco_centavos": 9500
+  },
+  {
+   "codigo": "13285",
+   "descricao": "ARGAMASSA COLANTE TIPO AC I",
+   "unidade": "KG",
+   "preco_centavos": 92
+  },
+  {
+   "codigo": "37595",
+   "descricao": "ARGAMASSA COLANTE TIPO AC III",
+   "unidade": "KG",
+   "preco_centavos": 235
+  },
+  {
+   "codigo": "7267",
+   "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+   "unidade": "MIL",
+   "preco_centavos": 62000
+  },
+  {
+   "codigo": "7271",
+   "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+   "unidade": "MIL",
+   "preco_centavos": 78000
+  },
+  {
+   "codigo": "650",
+   "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+   "unidade": "UN",
+   "preco_centavos": 410
+  },
+  {
+   "codigo": "1013",
+   "descricao": "CABO DE COBRE, FLEXIVEL, CLASSE 4 OU 5, ISOLACAO EM PVC/A, ANTICHAMA BWF-B, 1 CONDUTOR, 450/750 V, SECAO NOMINAL 1,5 MM2",
+   "unidade": "M",
+   "preco_centavos": 190
+  },
+  {
+   "codigo": "1014",
+   "descricao": "CABO DE COBRE, FLEXIVEL, CLASSE 4 OU 5, ISOLACAO EM PVC/A, ANTICHAMA BWF-B, 1 CONDUTOR, 450/750 V, SECAO NOMINAL 2,5 MM2",
+   "unidade": "M",
+   "preco_centavos": 285
+  },
+  {
+   "codigo": "981",
+   "descricao": "CABO DE COBRE, FLEXIVEL, CLASSE 4 OU 5, ISOLACAO EM PVC/A, ANTICHAMA BWF-B, 1 CONDUTOR, 450/750 V, SECAO NOMINAL 4 MM2",
+   "unidade": "M",
+   "preco_centavos": 460
+  },
+  {
+   "codigo": "3767",
+   "descricao": "CAL HIDRATADA CH-I PARA ARGAMASSAS",
+   "unidade": "KG",
+   "preco_centavos": 105
+  },
+  {
+   "codigo": "1106",
+   "descricao": "CAL HIDRATADA CH-III",
+   "unidade": "KG",
+   "preco_centavos": 88
+  },
+  {
+   "codigo": "1358",
+   "descricao": "CHAPA DE MADEIRA COMPENSADA RESINADA PARA FORMA DE CONCRETO, DE *2,2 X 1,1* M, E = 12 MM",
+   "unidade": "M2",
+   "preco_centavos": 3150
+  },
+  {
+   "codigo": "1379",
+   "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32",
+   "unidade": "KG",
+   "preco_centavos": 78
+  },
+  {
+   "codigo": "1381",
+   "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32 (SACO DE 50 KG)",
+   "unidade": "SC",
+   "preco_centavos": 3890
+  },
+  {
+   "codigo": "1382",
+   "descricao": "CIMENTO PORTLAND CP IV-32 (SACO DE 50 KG)",
+   "unidade": "SC",
+   "preco_centavos": 3740
+  },
+  {
+   "codigo": "11964",
+   "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+   "unidade": "M3",
+   "preco_centavos": 52000
+  },
+  {
+   "codigo": "34494",
+   "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+   "unidade": "M3",
+   "preco_centavos": 47000
+  },
+  {
+   "codigo": "1570",
+   "descricao": "DISJUNTOR TIPO DIN/IEC, MONOPOLAR DE 6 ATE 32A",
+   "unidade": "UN",
+   "preco_centavos": 1490
+  },
+  {
+   "codigo": "2696",
+   "descricao": "ELETRICISTA (HORISTA)",
+   "unidade": "H",
+   "preco_centavos": 2420
+  },
+  {
+   "codigo": "2673",
+   "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+   "unidade": "M",
+   "preco_centavos": 210
+  },
+  {
+   "codigo": "2436",
+   "descricao": "ENCANADOR OU BOMBEIRO HIDRAULICO (HORISTA)",
+   "unidade": "H",
+   "preco_centavos": 2380
+  },
+  {
+   "codigo": "3083",
+   "descricao": "IMPERMEABILIZANTE FLEXIVEL BRANCO DE BASE ACRILICA PARA COBERTURAS",
+   "unidade": "KG",
+   "preco_centavos": 1870
+  },
+  {
+   "codigo": "38085",
+   "descricao": "INTERRUPTOR SIMPLES 10A, 250V (APENAS MODULO)",
+   "unidade": "UN",
+   "preco_centavos": 760
+  },
+  {
+   "codigo": "10498",
+   "descricao": "JANELA DE CORRER EM ALUMINIO, 120 X 120 CM, 2 FOLHAS, COM VIDRO",
+   "unidade": "UN",
+   "preco_centavos": 78000
+  },
+  {
+   "codigo": "3540",
+   "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+   "unidade": "UN",
+   "preco_centavos": 95
+  },
+  {
+   "codigo": "3536",
+   "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+   "unidade": "UN",
+   "preco_centavos": 240
+  },
+  {
+   "codigo": "40874",
+   "descricao": "MANTA ASFALTICA ELASTOMERICA EM POLIESTER 3 MM, TIPO III, CLASSE B",
+   "unidade": "M2",
+   "preco_centavos": 4890
+  },
+  {
+   "codigo": "39443",
+   "descricao": "MASSA ACRILICA PARA PAREDES INTERIOR/EXTERIOR",
+   "unidade": "L",
+   "preco_centavos": 980
+  },
+  {
+   "codigo": "3768",
+   "descricao": "MASSA CORRIDA PVA PARA PAREDES INTERNAS",
+   "unidade": "L",
+   "preco_centavos": 690
+  },
+  {
+   "codigo": "4823",
+   "descricao": "MASSA PARA VIDRO",
+   "unidade": "KG",
+   "preco_centavos": 1230
+  },
+  {
+   "codigo": "4721",
+   "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+   "unidade": "M3",
+   "preco_centavos": 11850
+  },
+  {
+   "codigo": "4722",
+   "descricao": "PEDRA BRITADA N. 2 (19 A 38 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+   "unidade": "M3",
+   "preco_centavos": 11230
+  },
+  {
+   "codigo": "4750",
+   "descricao": "PEDREIRO (HORISTA)",
+   "unidade": "H",
+   "preco_centavos": 2340
+  },
+  {
+   "codigo": "4783",
+   "descricao": "PINTOR (HORISTA)",
+   "unidade": "H",
+   "preco_centavos": 2310
+  },
+  {
+   "codigo": "1287",
+   "descricao": "PISO EM CERAMICA ESMALTADA, PEI MAIOR OU IGUAL A 4, FORMATO MENOR OU IGUAL A 2025 CM2",
+   "unidade": "M2",
+   "preco_centavos": 3490
+  },
+  {
+   "codigo": "4491",
+   "descricao": "PONTALETE *7,5 X 7,5* CM EM PINUS, MISTA OU EQUIVALENTE DA REGIAO - BRUTA",
+   "unidade": "M",
+   "preco_centavos": 670
+  },
+  {
+   "codigo": "36179",
+   "descricao": "PORCELANATO ESMALTADO POLIDO, RETIFICADO, 60 X 60 CM",
+   "unidade": "M2",
+   "preco_centavos": 6990
+  },
+  {
+   "codigo": "11587",
+   "descricao": "PORTA DE MADEIRA, FOLHA LEVE (NBR 15930), DE 80 X 210 CM, E = 35 MM, NUCLEO SARRAFEADO",
+   "unidade": "UN",
+   "preco_centavos": 24500
+  },
+  {
+   "codigo": "5075",
+   "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+   "unidade": "KG",
+   "preco_centavos": 1640
+  },
+  {
+   "codigo": "34357",
+   "descricao": "REJUNTE CIMENTICIO, QUALQUER COR",
+   "unidade": "KG",
+   "preco_centavos": 380
+  },
+  {
+   "codigo": "1294",
+   "descricao": "REVESTIMENTO EM CERAMICA ESMALTADA, PEI 3, FORMATO 30 X 40 CM",
+   "unidade": "M2",
+   "preco_centavos": 2950
+  },
+  {
+   "codigo": "6085",
+   "descricao": "SELADOR ACRILICO PAREDES INTERNAS/EXTERNAS",
+   "unidade": "L",
+   "preco_centavos": 1130
+  },
+  {
+   "codigo": "6111",
+   "descricao": "SERVENTE DE OBRAS (HORISTA)",
+   "unidade": "H",
+   "preco_centavos": 1790
+  },
+  {
+   "codigo": "6189",
+   "descricao": "TABUA NAO APARELHADA *2,5 X 30* CM, EM MACARANDUBA, ANGELIM OU EQUIVALENTE DA REGIAO",
+   "unidade": "M",
+   "preco_centavos": 1980
+  },
+  {
+   "codigo": "34557",
+   "descricao": "TELA DE ACO SOLDADA NERVURADA, CA-60, Q-138, (2,20 KG/M2), DIAMETRO DO FIO = 4,2 MM",
+   "unidade": "M2",
+   "preco_centavos": 2480
+  },
+  {
+   "codigo": "7194",
+   "descricao": "TELHA CERAMICA TIPO COLONIAL, COMPRIMENTO DE *50* CM, RENDIMENTO DE *26* TELHAS/M2",
+   "unidade": "MIL",
+   "preco_centavos": 145000
+  },
+  {
+   "codigo": "7175",
+   "descricao": "TELHA DE FIBROCIMENTO ONDULADA E = 6 MM, DE 2,44 X 1,10 M (SEM AMIANTO)",
+   "unidade": "UN",
+   "preco_centavos": 7240
+  },
+  {
+   "codigo": "7356",
+   "descricao": "TINTA LATEX ACRILICA PREMIUM, COR BRANCO FOSCO",
+   "unidade": "L",
+   "preco_centavos": 2460
+  },
+  {
+   "codigo": "7348",
+   "descricao": "TINTA LATEX PVA PREMIUM, COR BRANCA",
+   "unidade": "L",
+   "preco_centavos": 1420
+  },
+  {
+   "codigo": "38191",
+   "descricao": "TOMADA 2P+T 10A, 250V (APENAS MODULO)",
+   "unidade": "UN",
+   "preco_centavos": 980
+  },
+  {
+   "codigo": "9838",
+   "descricao": "TUBO PVC SERIE NORMAL, DN 100 MM, PARA ESGOTO PREDIAL (NBR 5688)",
+   "unidade": "M",
+   "preco_centavos": 1970
+  },
+  {
+   "codigo": "9836",
+   "descricao": "TUBO PVC SERIE NORMAL, DN 40 MM, PARA ESGOTO PREDIAL (NBR 5688)",
+   "unidade": "M",
+   "preco_centavos": 680
+  },
+  {
+   "codigo": "9868",
+   "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+   "unidade": "M",
+   "preco_centavos": 420
+  },
+  {
+   "codigo": "9869",
+   "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+   "unidade": "M",
+   "preco_centavos": 890
+  }
+ ],
+ "listas": {
+  "reforma": [
+   "10 sacos cimento cp2",
+   "2 m3 areia media",
+   "1500 tijolo 8 furos",
+   "40 kg argamassa ac3",
+   "12 m2 porcelanato 60x60 polido",
+   "5 kg rejunte cimenticio",
+   "12 m tubo pvc esgoto 100mm",
+   "4 joelho 90 pvc 25mm",
+   "18 l tinta acrilica branca fosca",
+   "16 h pedreiro",
+   "16 h servente",
+   "6 parafuso sextavado 3/8"
+  ],
+  "avaliacao": [
+   "10 sacos cimento cp2",
+   "50 kg cimento cp ii 32",
+   "2 milheiros tijolo 8 furos",
+   "1500 tijolo 8 furos",
+   "1 milheiro bloco ceramico 6 furos",
+   "120 bloco de concreto estrutural 14x19x39",
+   "3 m3 areia media",
+   "2m³ areia fina",
+   "4 m3 brita 1",
+   "2 m3 brita 2",
+   "30 kg vergalhao 10mm ca50",
+   "25 kg ferro 8mm",
+   "20 kg aço ca 60 5mm",
+   "5 kg arame recozido 18",
+   "3 kg prego 18x30",
+   "10 m2 tela soldada q138",
+   "40 kg argamassa ac3",
+   "6 m3 concreto usinado c25 bombeavel",
+   "45 m2 porcelanato 60x60 polido",
+   "18 l tinta acrilica branca fosca",
+   "36 litros selador acrilico",
+   "12 m tubo pvc esgoto 100mm",
+   "30 m cano soldavel 25mm agua fria",
+   "15 joelho 90 pvc 25mm",
+   "100 m fio flexivel 2,5mm",
+   "10 tomada 2p+t 10a",
+   "2 porta de madeira 80x210",
+   "40 h pedreiro",
+   "40 horas servente",
+   "6 parafuso sextavado 3/8"
+  ],
+  "extras": [
+   "3 m3 brita 1",
+   "20 barras ferro 10mm",
+   "8 h eletricista",
+   "100 m fio flexivel 2,5mm",
+   "2 caixa d'agua 1000 litros",
+   "30 m2 piso ceramico",
+   "6 kg prego 18x27",
+   "1 milheiro bloco concreto"
+  ]
+ },
+ "linhas": {
+  "10 sacos cimento cp2": {
+   "resultado": {
+    "linha": "10 sacos cimento cp2",
+    "quantidade": 10.0,
+    "unidade_pedida": "SC",
+    "codigo": "1379",
+    "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32",
+    "unidade": "KG",
+    "quantidade_sinapi": null,
+    "preco_unitario_centavos": 78,
+    "subtotal_centavos": null,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.30, 0.05 acima do segundo); pedido em SC, SINAPI em KG: conversão depende do produto"
+   },
+   "candidatos": [
+    {
+     "codigo": "1379",
+     "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32",
+     "unidade": "KG",
+     "preco_centavos": 78,
+     "nota": 0.29510224
+    },
+    {
+     "codigo": "1382",
+     "descricao": "CIMENTO PORTLAND CP IV-32 (SACO DE 50 KG)",
+     "unidade": "SC",
+     "preco_centavos": 3740,
+     "nota": 0.24990855
+    },
+    {
+     "codigo": "1381",
+     "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32 (SACO DE 50 KG)",
+     "unidade": "SC",
+     "preco_centavos": 3890,
+     "nota": 0.21789636
+    }
+   ]
+  },
+  "2 m3 areia media": {
+   "resultado": {
+    "linha": "2 m3 areia media",
+    "quantidade": 2.0,
+    "unidade_pedida": "M3",
+    "codigo": "370",
+    "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+    "unidade": "M3",
+    "quantidade_sinapi": 2.0,
+    "preco_unitario_centavos": 9500,
+    "subtotal_centavos": 19000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.24, 0.12 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "370",
+     "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 9500,
+     "nota": 0.23821206
+    },
+    {
+     "codigo": "366",
+     "descricao": "AREIA FINA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 10200,
+     "nota": 0.12270405
+    }
+   ]
+  },
+  "1500 tijolo 8 furos": {
+   "resultado": {
+    "linha": "1500 tijolo 8 furos",
+    "quantidade": 1500.0,
+    "unidade_pedida": null,
+    "codigo": "7271",
+    "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+    "unidade": "MIL",
+    "quantidade_sinapi": 1.5,
+    "preco_unitario_centavos": 78000,
+    "subtotal_centavos": 117000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.18, 0.06 acima do segundo); unidade não informada, contada como UN; convertido de 1500 UN para 1.5 MIL"
+   },
+   "candidatos": [
+    {
+     "codigo": "7271",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 78000,
+     "nota": 0.1761217
+    },
+    {
+     "codigo": "7267",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 62000,
+     "nota": 0.115502335
+    },
+    {
+     "codigo": "33",
+     "descricao": "ACO CA-50, 8,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 845,
+     "nota": 0.070264235
+    }
+   ]
+  },
+  "40 kg argamassa ac3": {
+   "resultado": {
+    "linha": "40 kg argamassa ac3",
+    "quantidade": 40.0,
+    "unidade_pedida": "KG",
+    "codigo": "13285",
+    "descricao": "ARGAMASSA COLANTE TIPO AC I",
+    "unidade": "KG",
+    "quantidade_sinapi": 40.0,
+    "preco_unitario_centavos": 92,
+    "subtotal_centavos": 3680,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.41, 0.02 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "13285",
+     "descricao": "ARGAMASSA COLANTE TIPO AC I",
+     "unidade": "KG",
+     "preco_centavos": 92,
+     "nota": 0.40970668
+    },
+    {
+     "codigo": "37595",
+     "descricao": "ARGAMASSA COLANTE TIPO AC III",
+     "unidade": "KG",
+     "preco_centavos": 235,
+     "nota": 0.38523504
+    },
+    {
+     "codigo": "3767",
+     "descricao": "CAL HIDRATADA CH-I PARA ARGAMASSAS",
+     "unidade": "KG",
+     "preco_centavos": 105,
+     "nota": 0.26723847
+    }
+   ]
+  },
+  "12 m2 porcelanato 60x60 polido": {
+   "resultado": {
+    "linha": "12 m2 porcelanato 60x60 polido",
+    "quantidade": 12.0,
+    "unidade_pedida": "M2",
+    "codigo": "36179",
+    "descricao": "PORCELANATO ESMALTADO POLIDO, RETIFICADO, 60 X 60 CM",
+    "unidade": "M2",
+    "quantidade_sinapi": 12.0,
+    "preco_unitario_centavos": 6990,
+    "subtotal_centavos": 83880,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.48, 0.34 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "36179",
+     "descricao": "PORCELANATO ESMALTADO POLIDO, RETIFICADO, 60 X 60 CM",
+     "unidade": "M2",
+     "preco_centavos": 6990,
+     "nota": 0.47531107
+    },
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.1369309
+    }
+   ]
+  },
+  "5 kg rejunte cimenticio": {
+   "resultado": {
+    "linha": "5 kg rejunte cimenticio",
+    "quantidade": 5.0,
+    "unidade_pedida": "KG",
+    "codigo": "34357",
+    "descricao": "REJUNTE CIMENTICIO, QUALQUER COR",
+    "unidade": "KG",
+    "quantidade_sinapi": 5.0,
+    "preco_unitario_centavos": 380,
+    "subtotal_centavos": 1900,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.67, 0.67 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "34357",
+     "descricao": "REJUNTE CIMENTICIO, QUALQUER COR",
+     "unidade": "KG",
+     "preco_centavos": 380,
+     "nota": 0.6736959
+    }
+   ]
+  },
+  "12 m tubo pvc esgoto 100mm": {
+   "resultado": {
+    "linha": "12 m tubo pvc esgoto 100mm",
+    "quantidade": 12.0,
+    "unidade_pedida": "M",
+    "codigo": "9838",
+    "descricao": "TUBO PVC SERIE NORMAL, DN 100 MM, PARA ESGOTO PREDIAL (NBR 5688)",
+    "unidade": "M",
+    "quantidade_sinapi": 12.0,
+    "preco_unitario_centavos": 1970,
+    "subtotal_centavos": 23640,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.38, 0.06 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "9838",
+     "descricao": "TUBO PVC SERIE NORMAL, DN 100 MM, PARA ESGOTO PREDIAL (NBR 5688)",
+     "unidade": "M",
+     "preco_centavos": 1970,
+     "nota": 0.3845776
+    },
+    {
+     "codigo": "9836",
+     "descricao": "TUBO PVC SERIE NORMAL, DN 40 MM, PARA ESGOTO PREDIAL (NBR 5688)",
+     "unidade": "M",
+     "preco_centavos": 680,
+     "nota": 0.32428306
+    },
+    {
+     "codigo": "9868",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 420,
+     "nota": 0.20281015
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.20281015
+    },
+    {
+     "codigo": "2673",
+     "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+     "unidade": "M",
+     "preco_centavos": 210,
+     "nota": 0.11967579
+    }
+   ]
+  },
+  "4 joelho 90 pvc 25mm": {
+   "resultado": {
+    "linha": "4 joelho 90 pvc 25mm",
+    "quantidade": 4.0,
+    "unidade_pedida": null,
+    "codigo": "3540",
+    "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+    "unidade": "UN",
+    "quantidade_sinapi": 4.0,
+    "preco_unitario_centavos": 95,
+    "subtotal_centavos": 380,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.34, 0.04 acima do segundo); unidade não informada, contada como UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "3540",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 95,
+     "nota": 0.338698
+    },
+    {
+     "codigo": "3536",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 240,
+     "nota": 0.29559454
+    },
+    {
+     "codigo": "9868",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 420,
+     "nota": 0.13588783
+    },
+    {
+     "codigo": "2673",
+     "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+     "unidade": "M",
+     "preco_centavos": 210,
+     "nota": 0.12457318
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.098531514
+    }
+   ]
+  },
+  "18 l tinta acrilica branca fosca": {
+   "resultado": {
+    "linha": "18 l tinta acrilica branca fosca",
+    "quantidade": 18.0,
+    "unidade_pedida": "L",
+    "codigo": "7356",
+    "descricao": "TINTA LATEX ACRILICA PREMIUM, COR BRANCO FOSCO",
+    "unidade": "L",
+    "quantidade_sinapi": 18.0,
+    "preco_unitario_centavos": 2460,
+    "subtotal_centavos": 44280,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.57, 0.26 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "7356",
+     "descricao": "TINTA LATEX ACRILICA PREMIUM, COR BRANCO FOSCO",
+     "unidade": "L",
+     "preco_centavos": 2460,
+     "nota": 0.571431
+    },
+    {
+     "codigo": "7348",
+     "descricao": "TINTA LATEX PVA PREMIUM, COR BRANCA",
+     "unidade": "L",
+     "preco_centavos": 1420,
+     "nota": 0.30699208
+    },
+    {
+     "codigo": "3083",
+     "descricao": "IMPERMEABILIZANTE FLEXIVEL BRANCO DE BASE ACRILICA PARA COBERTURAS",
+     "unidade": "KG",
+     "preco_centavos": 1870,
+     "nota": 0.22776479
+    },
+    {
+     "codigo": "39443",
+     "descricao": "MASSA ACRILICA PARA PAREDES INTERIOR/EXTERIOR",
+     "unidade": "L",
+     "preco_centavos": 980,
+     "nota": 0.20038335
+    },
+    {
+     "codigo": "6085",
+     "descricao": "SELADOR ACRILICO PAREDES INTERNAS/EXTERNAS",
+     "unidade": "L",
+     "preco_centavos": 1130,
+     "nota": 0.15805532
+    }
+   ]
+  },
+  "16 h pedreiro": {
+   "resultado": {
+    "linha": "16 h pedreiro",
+    "quantidade": 16.0,
+    "unidade_pedida": "H",
+    "codigo": "4750",
+    "descricao": "PEDREIRO (HORISTA)",
+    "unidade": "H",
+    "quantidade_sinapi": 16.0,
+    "preco_unitario_centavos": 2340,
+    "subtotal_centavos": 37440,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.59, 0.59 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "4750",
+     "descricao": "PEDREIRO (HORISTA)",
+     "unidade": "H",
+     "preco_centavos": 2340,
+     "nota": 0.5902045
+    }
+   ]
+  },
+  "16 h servente": {
+   "resultado": {
+    "linha": "16 h servente",
+    "quantidade": 16.0,
+    "unidade_pedida": "H",
+    "codigo": "6111",
+    "descricao": "SERVENTE DE OBRAS (HORISTA)",
+    "unidade": "H",
+    "quantidade_sinapi": 16.0,
+    "preco_unitario_centavos": 1790,
+    "subtotal_centavos": 28640,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.41, 0.41 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "6111",
+     "descricao": "SERVENTE DE OBRAS (HORISTA)",
+     "unidade": "H",
+     "preco_centavos": 1790,
+     "nota": 0.40694657
+    }
+   ]
+  },
+  "6 parafuso sextavado 3/8": {
+   "resultado": {
+    "linha": "6 parafuso sextavado 3/8",
+    "quantidade": 6.0,
+    "unidade_pedida": null,
+    "codigo": null,
+    "descricao": null,
+    "unidade": null,
+    "quantidade_sinapi": null,
+    "preco_unitario_centavos": null,
+    "subtotal_centavos": null,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "busca não achou candidatos"
+   },
+   "candidatos": []
+  },
+  "50 kg cimento cp ii 32": {
+   "resultado": {
+    "linha": "50 kg cimento cp ii 32",
+    "quantidade": 50.0,
+    "unidade_pedida": "KG",
+    "codigo": "1379",
+    "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32",
+    "unidade": "KG",
+    "quantidade_sinapi": 50.0,
+    "preco_unitario_centavos": 78,
+    "subtotal_centavos": 3900,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.55, 0.15 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "1379",
+     "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32",
+     "unidade": "KG",
+     "preco_centavos": 78,
+     "nota": 0.5455945
+    },
+    {
+     "codigo": "1381",
+     "descricao": "CIMENTO PORTLAND COMPOSTO CP II-32 (SACO DE 50 KG)",
+     "unidade": "SC",
+     "preco_centavos": 3890,
+     "nota": 0.39342064
+    },
+    {
+     "codigo": "1382",
+     "descricao": "CIMENTO PORTLAND CP IV-32 (SACO DE 50 KG)",
+     "unidade": "SC",
+     "preco_centavos": 3740,
+     "nota": 0.37185976
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.066045634
+    },
+    {
+     "codigo": "3536",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 240,
+     "nota": 0.05867644
+    }
+   ]
+  },
+  "2 milheiros tijolo 8 furos": {
+   "resultado": {
+    "linha": "2 milheiros tijolo 8 furos",
+    "quantidade": 2.0,
+    "unidade_pedida": "MIL",
+    "codigo": "7271",
+    "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+    "unidade": "MIL",
+    "quantidade_sinapi": 2.0,
+    "preco_unitario_centavos": 78000,
+    "subtotal_centavos": 156000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.18, 0.06 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "7271",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 78000,
+     "nota": 0.1761217
+    },
+    {
+     "codigo": "7267",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 62000,
+     "nota": 0.115502335
+    },
+    {
+     "codigo": "33",
+     "descricao": "ACO CA-50, 8,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 845,
+     "nota": 0.070264235
+    }
+   ]
+  },
+  "1 milheiro bloco ceramico 6 furos": {
+   "resultado": {
+    "linha": "1 milheiro bloco ceramico 6 furos",
+    "quantidade": 1.0,
+    "unidade_pedida": "MIL",
+    "codigo": "7267",
+    "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+    "unidade": "MIL",
+    "quantidade_sinapi": 1.0,
+    "preco_unitario_centavos": 62000,
+    "subtotal_centavos": 62000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.47, 0.05 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "7267",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 62000,
+     "nota": 0.46820012
+    },
+    {
+     "codigo": "7271",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 78000,
+     "nota": 0.4159649
+    },
+    {
+     "codigo": "650",
+     "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+     "unidade": "UN",
+     "preco_centavos": 410,
+     "nota": 0.13460116
+    },
+    {
+     "codigo": "1294",
+     "descricao": "REVESTIMENTO EM CERAMICA ESMALTADA, PEI 3, FORMATO 30 X 40 CM",
+     "unidade": "M2",
+     "preco_centavos": 2950,
+     "nota": 0.1294839
+    },
+    {
+     "codigo": "1287",
+     "descricao": "PISO EM CERAMICA ESMALTADA, PEI MAIOR OU IGUAL A 4, FORMATO MENOR OU IGUAL A 2025 CM2",
+     "unidade": "M2",
+     "preco_centavos": 3490,
+     "nota": 0.11275915
+    }
+   ]
+  },
+  "120 bloco de concreto estrutural 14x19x39": {
+   "resultado": {
+    "linha": "120 bloco de concreto estrutural 14x19x39",
+    "quantidade": 120.0,
+    "unidade_pedida": null,
+    "codigo": "650",
+    "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+    "unidade": "UN",
+    "quantidade_sinapi": 120.0,
+    "preco_unitario_centavos": 410,
+    "subtotal_centavos": 49200,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.59, 0.41 acima do segundo); unidade não informada, contada como UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "650",
+     "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+     "unidade": "UN",
+     "preco_centavos": 410,
+     "nota": 0.5879674
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.17846347
+    },
+    {
+     "codigo": "1358",
+     "descricao": "CHAPA DE MADEIRA COMPENSADA RESINADA PARA FORMA DE CONCRETO, DE *2,2 X 1,1* M, E = 12 MM",
+     "unidade": "M2",
+     "preco_centavos": 3150,
+     "nota": 0.17428908
+    },
+    {
+     "codigo": "7267",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 62000,
+     "nota": 0.16519818
+    },
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.162257
+    }
+   ]
+  },
+  "3 m3 areia media": {
+   "resultado": {
+    "linha": "3 m3 areia media",
+    "quantidade": 3.0,
+    "unidade_pedida": "M3",
+    "codigo": "370",
+    "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+    "unidade": "M3",
+    "quantidade_sinapi": 3.0,
+    "preco_unitario_centavos": 9500,
+    "subtotal_centavos": 28500,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.24, 0.12 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "370",
+     "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 9500,
+     "nota": 0.23821206
+    },
+    {
+     "codigo": "366",
+     "descricao": "AREIA FINA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 10200,
+     "nota": 0.12270405
+    }
+   ]
+  },
+  "2m³ areia fina": {
+   "resultado": {
+    "linha": "2m³ areia fina",
+    "quantidade": 2.0,
+    "unidade_pedida": "M3",
+    "codigo": "366",
+    "descricao": "AREIA FINA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+    "unidade": "M3",
+    "quantidade_sinapi": 2.0,
+    "preco_unitario_centavos": 10200,
+    "subtotal_centavos": 20400,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.24, 0.09 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "366",
+     "descricao": "AREIA FINA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 10200,
+     "nota": 0.24412605
+    },
+    {
+     "codigo": "370",
+     "descricao": "AREIA MEDIA - POSTO JAZIDA/FORNECEDOR (RETIRADO NA JAZIDA, SEM TRANSPORTE)",
+     "unidade": "M3",
+     "preco_centavos": 9500,
+     "nota": 0.15347327
+    }
+   ]
+  },
+  "4 m3 brita 1": {
+   "resultado": {
+    "linha": "4 m3 brita 1",
+    "quantidade": 4.0,
+    "unidade_pedida": "M3",
+    "codigo": "4721",
+    "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+    "unidade": "M3",
+    "quantidade_sinapi": 4.0,
+    "preco_unitario_centavos": 11850,
+    "subtotal_centavos": 47400,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.18, 0.01 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "4721",
+     "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11850,
+     "nota": 0.17943677
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.16605587
+    },
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.16205853
+    },
+    {
+     "codigo": "4722",
+     "descricao": "PEDRA BRITADA N. 2 (19 A 38 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11230,
+     "nota": 0.13039635
+    },
+    {
+     "codigo": "337",
+     "descricao": "ARAME RECOZIDO 18 BWG, 1,25 MM (0,01 KG/M)",
+     "unidade": "KG",
+     "preco_centavos": 1490,
+     "nota": 0.10182493
+    }
+   ]
+  },
+  "2 m3 brita 2": {
+   "resultado": {
+    "linha": "2 m3 brita 2",
+    "quantidade": 2.0,
+    "unidade_pedida": "M3",
+    "codigo": "4722",
+    "descricao": "PEDRA BRITADA N. 2 (19 A 38 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+    "unidade": "M3",
+    "quantidade_sinapi": 2.0,
+    "preco_unitario_centavos": 11230,
+    "subtotal_centavos": 22460,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.18, 0.01 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "4722",
+     "descricao": "PEDRA BRITADA N. 2 (19 A 38 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11230,
+     "nota": 0.17943677
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.16605587
+    },
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.117896356
+    },
+    {
+     "codigo": "4721",
+     "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11850,
+     "nota": 0.11236357
+    },
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.07039636
+    }
+   ]
+  },
+  "30 kg vergalhao 10mm ca50": {
+   "resultado": {
+    "linha": "30 kg vergalhao 10mm ca50",
+    "quantidade": 30.0,
+    "unidade_pedida": "KG",
+    "codigo": "34",
+    "descricao": "ACO CA-50, 10,0 MM, VERGALHAO",
+    "unidade": "KG",
+    "quantidade_sinapi": 30.0,
+    "preco_unitario_centavos": 810,
+    "subtotal_centavos": 24300,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.52, 0.08 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "34",
+     "descricao": "ACO CA-50, 10,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 810,
+     "nota": 0.5202642
+    },
+    {
+     "codigo": "32",
+     "descricao": "ACO CA-50, 6,3 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 890,
+     "nota": 0.44450668
+    },
+    {
+     "codigo": "33",
+     "descricao": "ACO CA-50, 8,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 845,
+     "nota": 0.44450668
+    },
+    {
+     "codigo": "43059",
+     "descricao": "ACO CA-60, 5,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 920,
+     "nota": 0.4026172
+    }
+   ]
+  },
+  "25 kg ferro 8mm": {
+   "resultado": {
+    "linha": "25 kg ferro 8mm",
+    "quantidade": 25.0,
+    "unidade_pedida": "KG",
+    "codigo": null,
+    "descricao": null,
+    "unidade": null,
+    "quantidade_sinapi": null,
+    "preco_unitario_centavos": null,
+    "subtotal_centavos": null,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "busca não achou candidatos"
+   },
+   "candidatos": []
+  },
+  "20 kg aço ca 60 5mm": {
+   "resultado": {
+    "linha": "20 kg aço ca 60 5mm",
+    "quantidade": 20.0,
+    "unidade_pedida": "KG",
+    "codigo": "43059",
+    "descricao": "ACO CA-60, 5,0 MM, VERGALHAO",
+    "unidade": "KG",
+    "quantidade_sinapi": 20.0,
+    "preco_unitario_centavos": 920,
+    "subtotal_centavos": 18400,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.44, 0.09 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "43059",
+     "descricao": "ACO CA-60, 5,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 920,
+     "nota": 0.44418946
+    },
+    {
+     "codigo": "32",
+     "descricao": "ACO CA-50, 6,3 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 890,
+     "nota": 0.35297698
+    },
+    {
+     "codigo": "33",
+     "descricao": "ACO CA-50, 8,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 845,
+     "nota": 0.31164634
+    },
+    {
+     "codigo": "34",
+     "descricao": "ACO CA-50, 10,0 MM, VERGALHAO",
+     "unidade": "KG",
+     "preco_centavos": 810,
+     "nota": 0.30312362
+    },
+    {
+     "codigo": "34557",
+     "descricao": "TELA DE ACO SOLDADA NERVURADA, CA-60, Q-138, (2,20 KG/M2), DIAMETRO DO FIO = 4,2 MM",
+     "unidade": "M2",
+     "preco_centavos": 2480,
+     "nota": 0.18532594
+    }
+   ]
+  },
+  "5 kg arame recozido 18": {
+   "resultado": {
+    "linha": "5 kg arame recozido 18",
+    "quantidade": 5.0,
+    "unidade_pedida": "KG",
+    "codigo": "337",
+    "descricao": "ARAME RECOZIDO 18 BWG, 1,25 MM (0,01 KG/M)",
+    "unidade": "KG",
+    "quantidade_sinapi": 5.0,
+    "preco_unitario_centavos": 1490,
+    "subtotal_centavos": 7450,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.55, 0.42 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "337",
+     "descricao": "ARAME RECOZIDO 18 BWG, 1,25 MM (0,01 KG/M)",
+     "unidade": "KG",
+     "preco_centavos": 1490,
+     "nota": 0.5472792
+    },
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.12740709
+    }
+   ]
+  },
+  "3 kg prego 18x30": {
+   "resultado": {
+    "linha": "3 kg prego 18x30",
+    "quantidade": 3.0,
+    "unidade_pedida": "KG",
+    "codigo": "5075",
+    "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+    "unidade": "KG",
+    "quantidade_sinapi": 3.0,
+    "preco_unitario_centavos": 1640,
+    "subtotal_centavos": 4920,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.22, 0.22 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.22188573
+    }
+   ]
+  },
+  "10 m2 tela soldada q138": {
+   "resultado": {
+    "linha": "10 m2 tela soldada q138",
+    "quantidade": 10.0,
+    "unidade_pedida": "M2",
+    "codigo": "34557",
+    "descricao": "TELA DE ACO SOLDADA NERVURADA, CA-60, Q-138, (2,20 KG/M2), DIAMETRO DO FIO = 4,2 MM",
+    "unidade": "M2",
+    "quantidade_sinapi": 10.0,
+    "preco_unitario_centavos": 2480,
+    "subtotal_centavos": 24800,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.27, 0.27 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "34557",
+     "descricao": "TELA DE ACO SOLDADA NERVURADA, CA-60, Q-138, (2,20 KG/M2), DIAMETRO DO FIO = 4,2 MM",
+     "unidade": "M2",
+     "preco_centavos": 2480,
+     "nota": 0.2690999
+    }
+   ]
+  },
+  "6 m3 concreto usinado c25 bombeavel": {
+   "resultado": {
+    "linha": "6 m3 concreto usinado c25 bombeavel",
+    "quantidade": 6.0,
+    "unidade_pedida": "M3",
+    "codigo": "11964",
+    "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+    "unidade": "M3",
+    "quantidade_sinapi": 6.0,
+    "preco_unitario_centavos": 52000,
+    "subtotal_centavos": 312000,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.44, 0.04 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.44053954
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.4045689
+    },
+    {
+     "codigo": "1358",
+     "descricao": "CHAPA DE MADEIRA COMPENSADA RESINADA PARA FORMA DE CONCRETO, DE *2,2 X 1,1* M, E = 12 MM",
+     "unidade": "M2",
+     "preco_centavos": 3150,
+     "nota": 0.16153963
+    },
+    {
+     "codigo": "650",
+     "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+     "unidade": "UN",
+     "preco_centavos": 410,
+     "nota": 0.15218447
+    }
+   ]
+  },
+  "45 m2 porcelanato 60x60 polido": {
+   "resultado": {
+    "linha": "45 m2 porcelanato 60x60 polido",
+    "quantidade": 45.0,
+    "unidade_pedida": "M2",
+    "codigo": "36179",
+    "descricao": "PORCELANATO ESMALTADO POLIDO, RETIFICADO, 60 X 60 CM",
+    "unidade": "M2",
+    "quantidade_sinapi": 45.0,
+    "preco_unitario_centavos": 6990,
+    "subtotal_centavos": 314550,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.48, 0.34 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "36179",
+     "descricao": "PORCELANATO ESMALTADO POLIDO, RETIFICADO, 60 X 60 CM",
+     "unidade": "M2",
+     "preco_centavos": 6990,
+     "nota": 0.47531107
+    },
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.1369309
+    }
+   ]
+  },
+  "36 litros selador acrilico": {
+   "resultado": {
+    "linha": "36 litros selador acrilico",
+    "quantidade": 36.0,
+    "unidade_pedida": "L",
+    "codigo": "6085",
+    "descricao": "SELADOR ACRILICO PAREDES INTERNAS/EXTERNAS",
+    "unidade": "L",
+    "quantidade_sinapi": 36.0,
+    "preco_unitario_centavos": 1130,
+    "subtotal_centavos": 40680,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.51, 0.31 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "6085",
+     "descricao": "SELADOR ACRILICO PAREDES INTERNAS/EXTERNAS",
+     "unidade": "L",
+     "preco_centavos": 1130,
+     "nota": 0.5081611
+    },
+    {
+     "codigo": "39443",
+     "descricao": "MASSA ACRILICA PARA PAREDES INTERIOR/EXTERIOR",
+     "unidade": "L",
+     "preco_centavos": 980,
+     "nota": 0.20060912
+    },
+    {
+     "codigo": "7356",
+     "descricao": "TINTA LATEX ACRILICA PREMIUM, COR BRANCO FOSCO",
+     "unidade": "L",
+     "preco_centavos": 2460,
+     "nota": 0.20020768
+    },
+    {
+     "codigo": "3083",
+     "descricao": "IMPERMEABILIZANTE FLEXIVEL BRANCO DE BASE ACRILICA PARA COBERTURAS",
+     "unidade": "KG",
+     "preco_centavos": 1870,
+     "nota": 0.13850446
+    }
+   ]
+  },
+  "30 m cano soldavel 25mm agua fria": {
+   "resultado": {
+    "linha": "30 m cano soldavel 25mm agua fria",
+    "quantidade": 30.0,
+    "unidade_pedida": "M",
+    "codigo": "9868",
+    "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+    "unidade": "M",
+    "quantidade_sinapi": 30.0,
+    "preco_unitario_centavos": 420,
+    "subtotal_centavos": 12600,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.45, 0.05 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "9868",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 420,
+     "nota": 0.45156997
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.400112
+    },
+    {
+     "codigo": "3540",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 95,
+     "nota": 0.385682
+    },
+    {
+     "codigo": "3536",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 240,
+     "nota": 0.34416795
+    }
+   ]
+  },
+  "15 joelho 90 pvc 25mm": {
+   "resultado": {
+    "linha": "15 joelho 90 pvc 25mm",
+    "quantidade": 15.0,
+    "unidade_pedida": null,
+    "codigo": "3540",
+    "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+    "unidade": "UN",
+    "quantidade_sinapi": 15.0,
+    "preco_unitario_centavos": 95,
+    "subtotal_centavos": 1425,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.34, 0.04 acima do segundo); unidade não informada, contada como UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "3540",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 95,
+     "nota": 0.338698
+    },
+    {
+     "codigo": "3536",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 240,
+     "nota": 0.29559454
+    },
+    {
+     "codigo": "9868",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 420,
+     "nota": 0.13588783
+    },
+    {
+     "codigo": "2673",
+     "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+     "unidade": "M",
+     "preco_centavos": 210,
+     "nota": 0.12457318
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.098531514
+    }
+   ]
+  },
+  "100 m fio flexivel 2,5mm": {
+   "resultado": {
+    "linha": "100 m fio flexivel 2,5mm",
+    "quantidade": 100.0,
+    "unidade_pedida": "M",
+    "codigo": "2673",
+    "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+    "unidade": "M",
+    "quantidade_sinapi": 100.0,
+    "preco_unitario_centavos": 210,
+    "subtotal_centavos": 21000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.20, 0.06 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "2673",
+     "descricao": "ELETRODUTO PVC FLEXIVEL CORRUGADO, COR AMARELA, DE 25 MM",
+     "unidade": "M",
+     "preco_centavos": 210,
+     "nota": 0.20163885
+    },
+    {
+     "codigo": "1014",
+     "descricao": "CABO DE COBRE, FLEXIVEL, CLASSE 4 OU 5, ISOLACAO EM PVC/A, ANTICHAMA BWF-B, 1 CONDUTOR, 450/750 V, SECAO NOMINAL 2,5 MM2",
+     "unidade": "M",
+     "preco_centavos": 285,
+     "nota": 0.14150746
+    },
+    {
+     "codigo": "3083",
+     "descricao": "IMPERMEABILIZANTE FLEXIVEL BRANCO DE BASE ACRILICA PARA COBERTURAS",
+     "unidade": "KG",
+     "preco_centavos": 1870,
+     "nota": 0.1368198
+    },
+    {
+     "codigo": "34557",
+     "descricao": "TELA DE ACO SOLDADA NERVURADA, CA-60, Q-138, (2,20 KG/M2), DIAMETRO DO FIO = 4,2 MM",
+     "unidade": "M2",
+     "preco_centavos": 2480,
+     "nota": 0.122803494
+    },
+    {
+     "codigo": "1013",
+     "descricao": "CABO DE COBRE, FLEXIVEL, CLASSE 4 OU 5, ISOLACAO EM PVC/A, ANTICHAMA BWF-B, 1 CONDUTOR, 450/750 V, SECAO NOMINAL 1,5 MM2",
+     "unidade": "M",
+     "preco_centavos": 190,
+     "nota": 0.10779077
+    }
+   ]
+  },
+  "10 tomada 2p+t 10a": {
+   "resultado": {
+    "linha": "10 tomada 2p+t 10a",
+    "quantidade": 10.0,
+    "unidade_pedida": null,
+    "codigo": "38191",
+    "descricao": "TOMADA 2P+T 10A, 250V (APENAS MODULO)",
+    "unidade": "UN",
+    "quantidade_sinapi": 10.0,
+    "preco_unitario_centavos": 980,
+    "subtotal_centavos": 9800,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.52, 0.41 acima do segundo); unidade não informada, contada como UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "38191",
+     "descricao": "TOMADA 2P+T 10A, 250V (APENAS MODULO)",
+     "unidade": "UN",
+     "preco_centavos": 980,
+     "nota": 0.5153382
+    },
+    {
+     "codigo": "38085",
+     "descricao": "INTERRUPTOR SIMPLES 10A, 250V (APENAS MODULO)",
+     "unidade": "UN",
+     "preco_centavos": 760,
+     "nota": 0.1095378
+    }
+   ]
+  },
+  "2 porta de madeira 80x210": {
+   "resultado": {
+    "linha": "2 porta de madeira 80x210",
+    "quantidade": 2.0,
+    "unidade_pedida": null,
+    "codigo": "11587",
+    "descricao": "PORTA DE MADEIRA, FOLHA LEVE (NBR 15930), DE 80 X 210 CM, E = 35 MM, NUCLEO SARRAFEADO",
+    "unidade": "UN",
+    "quantidade_sinapi": 2.0,
+    "preco_unitario_centavos": 24500,
+    "subtotal_centavos": 49000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.31, 0.14 acima do segundo); unidade não informada, contada como UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "11587",
+     "descricao": "PORTA DE MADEIRA, FOLHA LEVE (NBR 15930), DE 80 X 210 CM, E = 35 MM, NUCLEO SARRAFEADO",
+     "unidade": "UN",
+     "preco_centavos": 24500,
+     "nota": 0.31325576
+    },
+    {
+     "codigo": "1358",
+     "descricao": "CHAPA DE MADEIRA COMPENSADA RESINADA PARA FORMA DE CONCRETO, DE *2,2 X 1,1* M, E = 12 MM",
+     "unidade": "M2",
+     "preco_centavos": 3150,
+     "nota": 0.17815897
+    }
+   ]
+  },
+  "40 h pedreiro": {
+   "resultado": {
+    "linha": "40 h pedreiro",
+    "quantidade": 40.0,
+    "unidade_pedida": "H",
+    "codigo": "4750",
+    "descricao": "PEDREIRO (HORISTA)",
+    "unidade": "H",
+    "quantidade_sinapi": 40.0,
+    "preco_unitario_centavos": 2340,
+    "subtotal_centavos": 93600,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.59, 0.59 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "4750",
+     "descricao": "PEDREIRO (HORISTA)",
+     "unidade": "H",
+     "preco_centavos": 2340,
+     "nota": 0.5902045
+    }
+   ]
+  },
+  "40 horas servente": {
+   "resultado": {
+    "linha": "40 horas servente",
+    "quantidade": 40.0,
+    "unidade_pedida": "H",
+    "codigo": "6111",
+    "descricao": "SERVENTE DE OBRAS (HORISTA)",
+    "unidade": "H",
+    "quantidade_sinapi": 40.0,
+    "preco_unitario_centavos": 1790,
+    "subtotal_centavos": 71600,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.41, 0.41 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "6111",
+     "descricao": "SERVENTE DE OBRAS (HORISTA)",
+     "unidade": "H",
+     "preco_centavos": 1790,
+     "nota": 0.40694657
+    }
+   ]
+  },
+  "3 m3 brita 1": {
+   "resultado": {
+    "linha": "3 m3 brita 1",
+    "quantidade": 3.0,
+    "unidade_pedida": "M3",
+    "codigo": "4721",
+    "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+    "unidade": "M3",
+    "quantidade_sinapi": 3.0,
+    "preco_unitario_centavos": 11850,
+    "subtotal_centavos": 35550,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.18, 0.01 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "4721",
+     "descricao": "PEDRA BRITADA N. 1 (9,5 A 19 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11850,
+     "nota": 0.17943677
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.16605587
+    },
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.16205853
+    },
+    {
+     "codigo": "4722",
+     "descricao": "PEDRA BRITADA N. 2 (19 A 38 MM) POSTO PEDREIRA/FORNECEDOR, SEM FRETE",
+     "unidade": "M3",
+     "preco_centavos": 11230,
+     "nota": 0.13039635
+    },
+    {
+     "codigo": "337",
+     "descricao": "ARAME RECOZIDO 18 BWG, 1,25 MM (0,01 KG/M)",
+     "unidade": "KG",
+     "preco_centavos": 1490,
+     "nota": 0.10182493
+    }
+   ]
+  },
+  "20 barras ferro 10mm": {
+   "resultado": {
+    "linha": "20 barras ferro 10mm",
+    "quantidade": 20.0,
+    "unidade_pedida": "PC",
+    "codigo": null,
+    "descricao": null,
+    "unidade": null,
+    "quantidade_sinapi": null,
+    "preco_unitario_centavos": null,
+    "subtotal_centavos": null,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "busca não achou candidatos"
+   },
+   "candidatos": []
+  },
+  "8 h eletricista": {
+   "resultado": {
+    "linha": "8 h eletricista",
+    "quantidade": 8.0,
+    "unidade_pedida": "H",
+    "codigo": "2696",
+    "descricao": "ELETRICISTA (HORISTA)",
+    "unidade": "H",
+    "quantidade_sinapi": 8.0,
+    "preco_unitario_centavos": 2420,
+    "subtotal_centavos": 19360,
+    "confianca": "alta",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.77, 0.77 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "2696",
+     "descricao": "ELETRICISTA (HORISTA)",
+     "unidade": "H",
+     "preco_centavos": 2420,
+     "nota": 0.76667506
+    }
+   ]
+  },
+  "2 caixa d'agua 1000 litros": {
+   "resultado": {
+    "linha": "2 caixa d'agua 1000 litros",
+    "quantidade": 2.0,
+    "unidade_pedida": null,
+    "codigo": "9868",
+    "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+    "unidade": "M",
+    "quantidade_sinapi": null,
+    "preco_unitario_centavos": 420,
+    "subtotal_centavos": null,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.10, 0.00 acima do segundo); unidade não informada, contada como UN; pedido em UN, SINAPI em M: conversão depende do produto"
+   },
+   "candidatos": [
+    {
+     "codigo": "9868",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 25 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 420,
+     "nota": 0.10446624
+    },
+    {
+     "codigo": "9869",
+     "descricao": "TUBO PVC, SOLDAVEL, DN 32 MM, AGUA FRIA (NBR-5648)",
+     "unidade": "M",
+     "preco_centavos": 890,
+     "nota": 0.10446624
+    },
+    {
+     "codigo": "3536",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 32 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 240,
+     "nota": 0.07794802
+    },
+    {
+     "codigo": "3540",
+     "descricao": "JOELHO PVC, SOLDAVEL, 90 GRAUS, 25 MM, PARA AGUA FRIA PREDIAL",
+     "unidade": "UN",
+     "preco_centavos": 95,
+     "nota": 0.07794802
+    }
+   ]
+  },
+  "30 m2 piso ceramico": {
+   "resultado": {
+    "linha": "30 m2 piso ceramico",
+    "quantidade": 30.0,
+    "unidade_pedida": "M2",
+    "codigo": "1287",
+    "descricao": "PISO EM CERAMICA ESMALTADA, PEI MAIOR OU IGUAL A 4, FORMATO MENOR OU IGUAL A 2025 CM2",
+    "unidade": "M2",
+    "quantidade_sinapi": 30.0,
+    "preco_unitario_centavos": 3490,
+    "subtotal_centavos": 104700,
+    "confianca": "baixa",
+    "revisar": true,
+    "motivo": "maior nota da busca (0.23, 0.04 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "1287",
+     "descricao": "PISO EM CERAMICA ESMALTADA, PEI MAIOR OU IGUAL A 4, FORMATO MENOR OU IGUAL A 2025 CM2",
+     "unidade": "M2",
+     "preco_centavos": 3490,
+     "nota": 0.23222129
+    },
+    {
+     "codigo": "7271",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 78000,
+     "nota": 0.18829109
+    },
+    {
+     "codigo": "7267",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 6 FUROS, DE 9 X 14 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 62000,
+     "nota": 0.18293872
+    },
+    {
+     "codigo": "1294",
+     "descricao": "REVESTIMENTO EM CERAMICA ESMALTADA, PEI 3, FORMATO 30 X 40 CM",
+     "unidade": "M2",
+     "preco_centavos": 2950,
+     "nota": 0.15942861
+    },
+    {
+     "codigo": "7194",
+     "descricao": "TELHA CERAMICA TIPO COLONIAL, COMPRIMENTO DE *50* CM, RENDIMENTO DE *26* TELHAS/M2",
+     "unidade": "MIL",
+     "preco_centavos": 145000,
+     "nota": 0.13645697
+    }
+   ]
+  },
+  "6 kg prego 18x27": {
+   "resultado": {
+    "linha": "6 kg prego 18x27",
+    "quantidade": 6.0,
+    "unidade_pedida": "KG",
+    "codigo": "5075",
+    "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+    "unidade": "KG",
+    "quantidade_sinapi": 6.0,
+    "preco_unitario_centavos": 1640,
+    "subtotal_centavos": 9840,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.20, 0.20 acima do segundo)"
+   },
+   "candidatos": [
+    {
+     "codigo": "5075",
+     "descricao": "PREGO DE ACO POLIDO COM CABECA 18 X 30 (2 3/4 X 10)",
+     "unidade": "KG",
+     "preco_centavos": 1640,
+     "nota": 0.19706303
+    }
+   ]
+  },
+  "1 milheiro bloco concreto": {
+   "resultado": {
+    "linha": "1 milheiro bloco concreto",
+    "quantidade": 1.0,
+    "unidade_pedida": "MIL",
+    "codigo": "650",
+    "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+    "unidade": "UN",
+    "quantidade_sinapi": 1000.0,
+    "preco_unitario_centavos": 410,
+    "subtotal_centavos": 410000,
+    "confianca": "media",
+    "revisar": false,
+    "motivo": "maior nota da busca (0.34, 0.18 acima do segundo); convertido de 1 MIL para 1E+3 UN"
+   },
+   "candidatos": [
+    {
+     "codigo": "650",
+     "descricao": "BLOCO DE CONCRETO ESTRUTURAL 14 X 19 X 39 CM, FBK 4,5 MPA",
+     "unidade": "UN",
+     "preco_centavos": 410,
+     "nota": 0.34381157
+    },
+    {
+     "codigo": "1358",
+     "descricao": "CHAPA DE MADEIRA COMPENSADA RESINADA PARA FORMA DE CONCRETO, DE *2,2 X 1,1* M, E = 12 MM",
+     "unidade": "M2",
+     "preco_centavos": 3150,
+     "nota": 0.1589678
+    },
+    {
+     "codigo": "34494",
+     "descricao": "CONCRETO USINADO CONVENCIONAL (NAO BOMBEAVEL) CLASSE DE RESISTENCIA C20, COM BRITA 1 E 2",
+     "unidade": "M3",
+     "preco_centavos": 47000,
+     "nota": 0.15385315
+    },
+    {
+     "codigo": "11964",
+     "descricao": "CONCRETO USINADO BOMBEAVEL, CLASSE DE RESISTENCIA C25, COM BRITA 0 E 1, SLUMP = 100 +/- 20 MM",
+     "unidade": "M3",
+     "preco_centavos": 52000,
+     "nota": 0.14944397
+    },
+    {
+     "codigo": "7271",
+     "descricao": "BLOCO CERAMICO (ALVENARIA DE VEDACAO), 8 FUROS, DE 9 X 19 X 19 CM",
+     "unidade": "MIL",
+     "preco_centavos": 78000,
+     "nota": 0.14706302
+    }
+   ]
+  }
+ },
+ "avaliacao": {
+  "total": 30,
+  "acertos": 22,
+  "revisoes": 7,
+  "erros_calados": 1,
+  "casos": [
+   {
+    "linha": "10 sacos cimento cp2",
+    "esperado": "1381",
+    "obtido": "1379",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "50 kg cimento cp ii 32",
+    "esperado": "1379",
+    "obtido": "1379",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "2 milheiros tijolo 8 furos",
+    "esperado": "7271",
+    "obtido": "7271",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "1500 tijolo 8 furos",
+    "esperado": "7271",
+    "obtido": "7271",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "1 milheiro bloco ceramico 6 furos",
+    "esperado": "7267",
+    "obtido": "7267",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "120 bloco de concreto estrutural 14x19x39",
+    "esperado": "650",
+    "obtido": "650",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "3 m3 areia media",
+    "esperado": "370",
+    "obtido": "370",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "2m³ areia fina",
+    "esperado": "366",
+    "obtido": "366",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "4 m3 brita 1",
+    "esperado": "4721",
+    "obtido": "4721",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "2 m3 brita 2",
+    "esperado": "4722",
+    "obtido": "4722",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "30 kg vergalhao 10mm ca50",
+    "esperado": "34",
+    "obtido": "34",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "25 kg ferro 8mm",
+    "esperado": "33",
+    "obtido": null,
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "20 kg aço ca 60 5mm",
+    "esperado": "43059",
+    "obtido": "43059",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "5 kg arame recozido 18",
+    "esperado": "337",
+    "obtido": "337",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "3 kg prego 18x30",
+    "esperado": "5075",
+    "obtido": "5075",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "10 m2 tela soldada q138",
+    "esperado": "34557",
+    "obtido": "34557",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "40 kg argamassa ac3",
+    "esperado": "37595",
+    "obtido": "13285",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "6 m3 concreto usinado c25 bombeavel",
+    "esperado": "11964",
+    "obtido": "11964",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "45 m2 porcelanato 60x60 polido",
+    "esperado": "36179",
+    "obtido": "36179",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "18 l tinta acrilica branca fosca",
+    "esperado": "7356",
+    "obtido": "7356",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "36 litros selador acrilico",
+    "esperado": "6085",
+    "obtido": "6085",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "12 m tubo pvc esgoto 100mm",
+    "esperado": "9838",
+    "obtido": "9838",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "30 m cano soldavel 25mm agua fria",
+    "esperado": "9868",
+    "obtido": "9868",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "15 joelho 90 pvc 25mm",
+    "esperado": "3540",
+    "obtido": "3540",
+    "confianca": "baixa",
+    "tipo": "revisao"
+   },
+   {
+    "linha": "100 m fio flexivel 2,5mm",
+    "esperado": "1014",
+    "obtido": "2673",
+    "confianca": "media",
+    "tipo": "erro_calado"
+   },
+   {
+    "linha": "10 tomada 2p+t 10a",
+    "esperado": "38191",
+    "obtido": "38191",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "2 porta de madeira 80x210",
+    "esperado": "11587",
+    "obtido": "11587",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "40 h pedreiro",
+    "esperado": "4750",
+    "obtido": "4750",
+    "confianca": "alta",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "40 horas servente",
+    "esperado": "6111",
+    "obtido": "6111",
+    "confianca": "media",
+    "tipo": "acerto"
+   },
+   {
+    "linha": "6 parafuso sextavado 3/8",
+    "esperado": null,
+    "obtido": null,
+    "confianca": "baixa",
+    "tipo": "acerto"
+   }
+  ]
+ }
+}
