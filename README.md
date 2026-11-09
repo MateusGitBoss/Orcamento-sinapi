@@ -1,6 +1,8 @@
 # orcamento-sinapi
 
-[![CI](https://github.com/MateusGitBoss/Or-amento-sinapi/actions/workflows/ci.yml/badge.svg)](https://github.com/MateusGitBoss/Or-amento-sinapi/actions/workflows/ci.yml)
+[![CI](https://github.com/MateusGitBoss/Orcamento-sinapi/actions/workflows/ci.yml/badge.svg)](https://github.com/MateusGitBoss/Orcamento-sinapi/actions/workflows/ci.yml)
+
+**Demonstração online:** https://orcamento-sinapi-puce.vercel.app
 
 Transforma uma lista de materiais escrita de qualquer jeito ("10 sacos cimento cp2", "1500 tijolo 8 furos") em orçamento com o código e o preço de referência do SINAPI de cada item, e separa o que precisa de conferência humana.
 
@@ -114,7 +116,7 @@ Nenhum teste chama a API do Claude: as respostas são dublês (`tests/fakes.py`)
 
 ## Como este projeto foi construído
 
-Construído com o Claude Code como ferramenta de desenvolvimento, com cada mudança entrando por pull request. O roteiro de estudo em [`docs/ENTREVISTA.md`](docs/ENTREVISTA.md) explica cada decisão.
+Construído com o Claude Code como ferramenta de desenvolvimento, com cada mudança entrando por pull request revisado.
 
 ## Licença
 
